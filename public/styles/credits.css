@@ -1,0 +1,53 @@
+p a {
+  color: #f4c687;
+}
+
+h2 {
+  color: #f4c687;
+  margin: 1rem;
+  padding: 0.5rem;
+  font-size: calc(2rem + 0.5vw);
+}
+
+span {
+  color: white;
+}
+
+p {
+  font-size: calc(1.4rem + 0.5vw);
+  color: white;
+  line-height: 3.5rem;
+}
+
+.creditsDiv {
+  width: 80%;
+  max-width: 70rem;
+  border: 1px solid #f4c687;
+  border-radius: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3.5rem;
+}
+
+.content {
+  padding: 1rem;
+}
+
+.creditIcons {
+  width: calc(2.5rem + 0.5vw);
+  height: calc(2.5rem + 0.5vw);
+}
+
+hr {
+  height: 1px;
+  border: 0;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-image: linear-gradient(to bottom, #f4c687, #ffffff); */
+  /* Created with https://www.css-gradient.com */
+  background: #ce7cb5;
+  background: -webkit-radial-gradient(center, #ce7cb5, #6d664a);
+  background: -moz-radial-gradient(center, #ce7cb5, #6d664a);
+  background: radial-gradient(ellipse at center, #ce7cb5, #6d664a);
+}

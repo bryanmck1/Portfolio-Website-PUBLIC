@@ -1,0 +1,159 @@
+h2 {
+  font-size: calc(2.5rem + 1vw);
+  background: #ffffff;
+  background: -webkit-linear-gradient(to left, #ffffff 0%, #f4c687 100%);
+  background: -moz-linear-gradient(to left, #ffffff 0%, #f4c687 100%);
+  background: linear-gradient(to left, #ffffff 0%, #f4c687 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 1.5rem;
+}
+
+h3 {
+  font-size: calc(1.8rem + 1vw);
+  margin: 1rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+}
+
+hr {
+  height: 1px;
+  border: 0;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-image: linear-gradient(to bottom, #f4c687, #ffffff); */
+  /* Created with https://www.css-gradient.com */
+  background: #ce7cb5;
+  background: -webkit-radial-gradient(center, #ce7cb5, #6d664a);
+  background: -moz-radial-gradient(center, #ce7cb5, #6d664a);
+  background: radial-gradient(ellipse at center, #ce7cb5, #6d664a);
+}
+
+.projectParagraphs,
+.techList,
+.techHeader,
+.insightLink {
+  font-size: calc(1.4rem + 0.5vw);
+  line-height: 3.5rem;
+  list-style: none;
+  margin: 1rem;
+}
+
+.insightLink a {
+  color: #f4c687;
+}
+
+.projectBtns {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  font-size: calc(1.2rem + 0.5vw);
+  padding: 0px;
+  margin: calc(1rem + 0.5vw);
+  width: calc(12rem + 0.5vw);
+  height: calc(3.5rem + 0.5vw);
+  outline: none;
+  z-index: 1;
+}
+
+.btn-outline-primary {
+  border-color: #f4c687 !important;
+  color: white;
+}
+
+.btn-outline-primary:hover {
+  color: #573b18 !important;
+  background-color: white !important;
+}
+
+.btn-light {
+  background-color: white !important;
+  color: #573b18 !important;
+  width: calc(14.5rem + 0.5vw);
+}
+
+.btn-light:hover {
+  background-color: #573b18 !important;
+  color: white !important;
+}
+
+.container {
+  max-width: 2000px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.technologyIcons {
+  width: calc(2.5rem + 0.5vw);
+}
+
+.projectDivs {
+  color: white;
+  width: 100%;
+  margin: 2rem;
+  border: 1px solid #f4c687;
+  border-radius: 2rem;
+  padding: 1rem;
+  max-width: 50rem;
+  flex: 1;
+}
+
+.projectPictures {
+  max-width: 100%;
+}
+
+.projectDivs li img {
+  margin: 0.5rem;
+}
+
+.modal-title {
+  color: black;
+  font-size: calc(1.4rem + 0.5vw);
+}
+
+.modal-body > p,
+.modal-body > span,
+.modal-body > ul,
+.modal-body ol {
+  color: black;
+  font-size: 1.5rem !important;
+  line-height: 3rem !important;
+  padding: calc(1rem + 0.5vw) !important;
+  font-weight: 400 !important;
+}
+
+.modal-body > ul {
+  list-style-type: square;
+}
+
+#exampleModalLong {
+  max-height: 75%;
+  width: 80%;
+  max-width: 50rem;
+  margin: auto;
+}
+
+@media screen and (min-width: 1000px) {
+  h2 {
+    font-size: calc(3rem + 0.25vw);
+  }
+  .projectDivs h3 {
+    font-size: calc(2rem + 0.25vw);
+  }
+
+  /* .projectDivs p {
+    font-size: calc(1.5rem + 0.25vw);
+  }
+
+  .projectDivs span,
+  ul li {
+    font-size: calc(1.5rem + 0.25vw);
+  } */
+}

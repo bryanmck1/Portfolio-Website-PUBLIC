@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/styles/projects.css" />
+    <link rel="stylesheet" href="/styles/global-styles/background.css" />
+    <link rel="stylesheet" href="/styles/global-styles/navbar.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handlee&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handlee&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Projects</title>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <div class="logoAndName">
+          <div class="logo">
+            <a href="/">
+              <img class="logoIcon" src="/img/monitorWhite.png" alt=""
+            /></a>
+          </div>
+          <div class="nameAndJob">
+            <div class="name">Bryan McKnight</div>
+            <div class="job">Software Developer</div>
+          </div>
+        </div>
+
+        <div class="hamburger-menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+
+          <ul class="menu__box">
+            <li><a class="menu__item" href="/">Home</a></li>
+            <li><a class="menu__item" href="/contact">Contact</a></li>
+            <li>
+              <a class="menu__item" href="/img/Bryan-McKnight-Resume.pdf"
+                >Resume</a
+              >
+            </li>
+            <li>
+              <a class="menu__item" href="https://github.com/bryanmck1"
+                >Github</a
+              >
+            </li>
+            <li>
+              <a
+                class="menu__item"
+                href="https://www.linkedin.com/in/mcknightbryan/
+              "
+                >LinkedIn</a
+              >
+            </li>
+            <li><a class="menu__item" href="/credits">Credits</a></li>
+          </ul>
+        </div>
+        <div class="desktop-nav">
+          <ul class="menu__box-desktop">
+            <li><a class="menu__item-desktop" href="/">Home</a></li>
+            <li><a class="menu__item-desktop" href="/contact">Contact</a></li>
+            <li>
+              <a
+                class="menu__item-desktop"
+                href="/img/Bryan-McKnight-Resume.pdf"
+                >Resume</a
+              >
+            </li>
+            <li>
+              <a class="menu__item-desktop" href="https://github.com/bryanmck1"
+                >Github</a
+              >
+            </li>
+            <li>
+              <a
+                class="menu__item-desktop"
+                href="https://www.linkedin.com/in/mcknightbryan/
+              "
+                >LinkedIn</a
+              >
+            </li>
+            <li><a class="menu__item-desktop" href="/credits">Credits</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <h2>Projects</h2>
+    <hr />
+
+    <div class="container">
+      <div class="projectOne projectDivs">
+        <h3>Weather Application</h3>
+
+        <img class="projectPictures" src="/img/weather.jpg" alt="" />
+        <hr />
+        <p class="projectParagraphs">
+          A weather application that allows you to search for weather data in
+          cities in the US, Mexico, Canada, UK, Germany, Spain, and France. It
+          shows current weather details, as well as 7 day forecasts, 48 hour
+          forecasts, and Air Quality data. It uses Google's autocomplete API to
+          help you select the correct city when searching.
+        </p>
+        <span class="techHeader">Technologies used include:</span> <br />
+        <ul class="techList">
+          <li>
+            <img class="technologyIcons" src="/img/htmlIcon.png" alt="" /> HTML
+          </li>
+          <li><img class="technologyIcons" src="/img/css.png" alt="" /> CSS</li>
+          <li>
+            <img class="technologyIcons" src="/img/java-script.png" alt="" />
+            JavaScript
+          </li>
+          <li>
+            <img class="technologyIcons" src="/img/api.png" alt="" />
+            API's: Google, OpenWeather, BreezoMeter, ipWhoIs
+          </li>
+        </ul>
+
+        <span class="insightLink"
+          >Insight into the project can be found
+          <a href="#" data-toggle="modal" data-target="#exampleModalLong"
+            >here</a
+          ></span
+        >
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModalLong"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalLongTitle"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">
+                  Weather App
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p class="modalParagraph">
+                  This app was really the first somewhat complex project I had
+                  completed up to this point. I knew I wanted to create a small
+                  weather app, mainly because I really wanted do get more
+                  familiar with API's, because I hadn't worked with them at all
+                  yet. I was intrigued about pulling data in from a third party
+                  and about the things that could be done with it. <br />
+                  <br />
+
+                  Much of this project was spent learning on the go, and having
+                  to look up how to do many things that I had never done before.
+                </p>
+                <br />
+
+                <span>Concepts Like:</span> <br />
+                <ul class="modalLists">
+                  <li>Fetching data from multiple endpoints</li>
+                  <li>
+                    Accessing that data (and then displaying it on your page)
+                  </li>
+                  <li>
+                    Creating and populating elements dynamically with Javascript
+                    (the hourly and daily mods are both created using the DOM)
+                  </li>
+                  <li>
+                    Using Google's Autocomplete API to autofill search results
+                    with cities
+                  </li>
+                  <li>
+                    Converting UNIX time to a human readable time (I used
+                    momentJS)
+                  </li>
+                  <li>
+                    Getting a users location from their public IP Address and
+                    then converting it into lon/lat coords (I used ipwhois API)
+                    to display their current cities weather
+                  </li>
+                </ul>
+                <br />
+                <p>
+                  were all things I had little to no experience working with.
+                  <br />
+                  <br />
+                  It was frustrating at times while making it given it was my
+                  first real project, but I feel like I learned and grew so much
+                  more by doing it and learning things as needed than I would
+                  have by watching tutorials.
+                </p>
+                <br />
+
+                <span
+                  >Two things in particular I would do differently if I were to
+                  do a project similar to this again:</span
+                >
+                <br />
+
+                <ol class="modalLists">
+                  <li>
+                    I would want a clear understanding of the direction I want
+                    the project to go before I start. Not only was I learning
+                    concepts on the go, but I was also deciding the layout on
+                    the go, and what all weather data I wanted to present as
+                    well. This slowed me down and is something I can be better
+                    at.
+                  </li>
+                  <li>
+                    Cleaner code. The Javascript code ended up being a little
+                    over 500 lines of code long. If I were to do it again, it
+                    would be a lot less than that, maybe even half. This is
+                    something that can be seen in the projects I've completed
+                    since this one. They have much cleaner code, and much less
+                    repetitive code, if any.
+                  </li>
+                </ol>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projectBtns">
+          <a href="https://bryanmck1.github.io/Weather-Application/"
+            ><button type="button" class="btn btn-outline-primary">
+              Live Demo
+            </button></a
+          >
+          <a href="https://github.com/bryanmck1/Weather-Application-PUBLIC"
+            ><button type="button" class="btn btn-light">Source code</button></a
+          >
+        </div>
+      </div>
+      <div class="projectTwo projectDivs">
+        <h3>Twitter Football Bot</h3>
+
+        <img class="projectPictures" src="/img/football.jpg" alt="" />
+        <hr />
+        <p class="projectParagraphs">
+          A Twitter bot that posts every goal and score update for each live
+          match in a specified league. This bot can be easily configured to post
+          updates for any of the over 1,300 football leagues Sportmonks API
+          covers, simply by changing the league ID.
+        </p>
+        <span class="techHeader">Technologies used include:</span> <br />
+        <ul class="techList">
+          <li>
+            <img class="technologyIcons" src="/img/nodejs.png" alt="" /> NodeJS
+          </li>
+          <li>
+            <img class="technologyIcons" src="/img/twitter.png" alt="" />
+            Twitter API
+          </li>
+          <li>
+            <img class="technologyIcons" src="/img/api.png" alt="" /> Sportmonks
+            API
+          </li>
+        </ul>
+
+        <span class="insightLink"
+          >Insight into the project can be found
+          <a href="#" data-toggle="modal" data-target=".football">here</a></span
+        >
+
+        <div
+          class="modal fade football"
+          id="exampleModalLong"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalLongTitle"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">
+                  Twitter Football Bot
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p class="modalParagraph">
+                  This project may very well have been the most challenging, but
+                  also the most fun because I love sports. I really struggled
+                  with it at first because I had no idea where to even start
+                  with it. Also, the first few API's I tried were unreliable
+                  with their data, so that was frustrating.
+                </p>
+                <br />
+
+                <span
+                  >The concept of it in the end was way more simple than I was
+                  initially making it out to be:
+                </span>
+                <br />
+                <ul class="modalLists">
+                  <li>
+                    We find the live games currently being played in the
+                    specified league
+                  </li>
+                  <li>
+                    Iterate through each live match and through each event in
+                    that match (for loop inside a for loop)
+                  </li>
+                  <li>
+                    If an event type is a goal AND we haven't already tweeted it
+                    out, post the tweet of the event and add its ID to the
+                    eventArray
+                  </li>
+                </ul>
+                <br />
+
+                <span
+                  >I use three different arrays to keep track of things that
+                  have already happened.
+                </span>
+                <br />
+
+                <ol class="modalLists">
+                  <li>
+                    The liveGamesArray is used to hold the ID's of games that
+                    are currently being played in the specified league. These
+                    games are then passed into an endpoint that fetches all of
+                    the events for the currently iterated game.
+                  </li>
+                  <li>
+                    The eventArray is used to store the ID's of each event that
+                    has already happened that was a goal. When we iterate
+                    through the events of each match, if we find a goal event,
+                    we check to see if it already exists in the eventArray. If
+                    it does, we go to the next event. If it doesn't already
+                    exist, we tweet out that a goal has happened, and push the
+                    ID of the goal event to the eventArray.
+                  </li>
+                  <li>
+                    The finishedGames array keeps track of games that have
+                    finished that we have already tweeted out a final score for.
+                    This is so we can check to see whether or not we've already
+                    posted the final score for a match or not.
+                  </li>
+                </ol>
+                <p>
+                  Using arrays like this to store events that have happened is
+                  something I may very well change in the future. The reason for
+                  this is because if there is an error on the server its being
+                  hosted on, the code could restart and the arrays would be
+                  emptied. I will likely switch to storing the ID's in a
+                  database to prevent this. <br />
+                  <br />
+
+                  This is a project that has been a ton of fun to create. Its
+                  one that I will likely expand on in the future and might add
+                  an API to it to tweet out breaking news or other relevant
+                  information for the specified league.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projectBtns">
+          <a href="https://twitter.com/PremierLg_Score"
+            ><button type="button" class="btn btn-outline-primary">
+              Live Demo
+            </button></a
+          >
+          <a href="https://github.com/bryanmck1/Twitter-Football-Bot-PUBLIC"
+            ><button type="button" class="btn btn-light">Source code</button></a
+          >
+        </div>
+      </div>
+      <div class="projectThree projectDivs">
+        <h3>Daily Inspirational Quote</h3>
+
+        <img class="projectPictures" src="/img/inspire.jpg" alt="" />
+        <hr />
+        <p class="projectParagraphs">
+          A simple application that allows users to sign up with one click to
+          receive a daily inspirational quote via email.
+        </p>
+        <span class="techHeader">Technologies used include:</span> <br />
+        <ul class="techList">
+          <li>
+            <img class="technologyIcons" src="/img/htmlIcon.png" alt="" />HTML
+          </li>
+          <li><img class="technologyIcons" src="/img/css.png" alt="" />CSS</li>
+          <li>
+            <img class="technologyIcons" src="/img/nodejs.png" alt="" />NodeJS
+          </li>
+          <li>
+            <img class="technologyIcons" src="/img/mysql.png" alt="" />MySQL
+          </li>
+          <li>
+            <img
+              class="technologyIcons"
+              src="/img/api.png"
+              alt=""
+            />Inspirational Quotes API
+          </li>
+        </ul>
+
+        <span class="insightLink"
+          >Insight into the project can be found
+          <a href="#" data-toggle="modal" data-target=".quotes">here</a></span
+        >
+
+        <div
+          class="modal fade quotes"
+          id="exampleModalLong"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalLongTitle"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">
+                  Daily Inspirational Quotes
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p class="modalParagraph">
+                  This project was my first time diving into the backend. I
+                  decided to use nodeJS since I had familiarity with Javascript
+                  already and thought it would be best for me as a beginner.
+                </p>
+                <br />
+
+                <span>Some of the challenges I ran into were: </span>
+                <br />
+                <ul class="modalLists">
+                  <li>Using MySQL for the first time</li>
+                  <li>
+                    Making queries to MySQL (checking to see if a users email
+                    address already exists in the database when a user submits
+                    an email address)
+                  </li>
+                  <li>
+                    Using the cron schedule module to schedule emails to be sent
+                    out daily
+                  </li>
+                  <li>
+                    Using an array method to turn the email addresses in the
+                    database into an array
+                  </li>
+                  <li>Using express app.get and app.post methods</li>
+                </ul>
+                <br />
+
+                <p>
+                  This project was really a good, simple project for me to begin
+                  with to get my feet wet in working on backend code. I
+                  originally started the project by using PHP for my backend,
+                  but decided to use nodeJS, and am glad I did. It was still a
+                  challenge, but the familiarity I had with Javascript made it a
+                  lot smoother than it otherwise would've been had I used
+                  something duch as PHP and had to learn new syntax.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projectBtns">
+          <a href="https://inspiremedaily.herokuapp.com/"
+            ><button type="button" class="btn btn-outline-primary">
+              Live Demo
+            </button></a
+          >
+          <a href="https://github.com/bryanmck1/Inspirational-Quotes-PUBLIC"
+            ><button type="button" class="btn btn-light">Source code</button></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
